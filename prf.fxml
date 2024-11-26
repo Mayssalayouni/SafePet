@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import java.net.URL?>
+<VBox alignment="CENTER" spacing="20" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.demo1.PrfController">
+    <stylesheets>
+        <URL value="@prf.css" />
+    </stylesheets>
+    <VBox alignment="CENTER" spacing="20" prefHeight="400" prefWidth="700">
+        <ImageView fx:id="profileImage" fitHeight="200" fitWidth="200">
+            <!-- Apply styling to ImageView if needed -->
+        </ImageView>
+        <!-- Add a vertical line to separate the image from other items -->
+        <Separator orientation="HORIZONTAL" />
+        <VBox spacing="10">
+            <Label fx:id="nameLabel" styleClass="profile-label" text="Name">
+                <!-- Apply styling to Label if needed -->
+            </Label>
+            <Label fx:id="phoneLabel" styleClass="profile-label" text="Phone Number">
+                <!-- Apply styling to Label if needed -->
+            </Label>
+            <Label fx:id="emailLabel" styleClass="profile-label" text="Email">
+                <!-- Apply styling to Label if needed -->
+            </Label>
+            <!-- Button to go back to homepage -->
+            <HBox alignment="CENTER" ><Button text="Retoune" onAction="#handleBackToHomepage"/>
+            </HBox>
+        </VBox>
+    </VBox>
+</VBox>

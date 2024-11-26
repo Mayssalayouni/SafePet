@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane stylesheets="@listpatient.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.PatientListController">
+    <top>
+        <HBox>
+            <Button onAction="#handleReturnToHome">
+                <graphic>
+                    <ImageView fitHeight="22.0" fitWidth="29.0">
+                        <image>
+                            <Image url="@home.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+         <ButtonBar prefHeight="40.0" prefWidth="652.0" />
+        </HBox>
+    </top>
+    <center>
+        <StackPane>
+            <TableView fx:id="patientTableView" styleClass="table-view">
+                <columns>
+                    <TableColumn fx:id="idColumn" prefWidth="100" text="ID">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="id" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn fx:id="nomColumn" prefWidth="150" text="Nom">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="nom" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn fx:id="prenomColumn" prefWidth="150" text="Prénom">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="prenom" />
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn fx:id="action1Column" prefWidth="100" text="Modifier" />
+                    <TableColumn fx:id="action2Column" prefWidth="100" text="Supprimer" />
+                    <TableColumn fx:id="action3Column" prefWidth="100" text="RDV" />
+                </columns>
+            </TableView>
+        </StackPane>
+    </center>
+</BorderPane>

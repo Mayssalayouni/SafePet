@@ -1,0 +1,21 @@
+#titleLabel {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.label {
+    -fx-font-size: 10px;
+}
+
+.button {
+  -fx-background-color:  #C39BD3; /* Light pink background color */
+     -fx-text-fill: white;
+     -fx-font-size: 10px;
+     -fx-font-weight: bold;
+     -fx-padding: 10 20;
+     -fx-margin:10;
+     -fx-border-radius: 10;
+     -fx-background-radius: 10;
+}
+
+

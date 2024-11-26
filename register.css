@@ -1,0 +1,49 @@
+/* logincss.css */
+.root {
+    -fx-background-color: #f0f0f0f;
+}
+/* Style pour le titre */
+.title {
+      -fx-font-size: 20px;
+      -fx-font-weight: bold;
+      -fx-text-fill: black;
+}
+
+/* Style pour les boutons */
+.button {
+    -fx-background-color: #C39BD3; /* Light pink background color */
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+
+/* Style pour les liens */
+.link {
+    -fx-text-fill: #0078d7;
+    -fx-underline: true;
+    -fx-cursor: hand;
+}
+
+/* Style pour les labels */
+.label {
+    -fx-font-size: 14px;
+}
+
+/* Style pour les TextFields et PasswordFields */
+.text-field, .password-field {
+    -fx-pref-width: 150px;
+    -fx-padding: 5px;
+    -fx-border-color: #d3d3d3;
+    -fx-border-radius: 5px;
+}
+
+/* Style pour VBox */
+.vbox {
+    -fx-alignment: center;
+    -fx-spacing: 10px;
+    -fx-padding: 10px;
+}

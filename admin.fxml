@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="503.0" prefWidth="605.0" spacing="50.0" style="-fx-background-color: #f0f0f0;" stylesheets="style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.example.demo1.AdminController">
+    <padding>
+        <Insets bottom="5.0" left="6" right="6" top="10" />
+    </padding>
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+
+    <HBox alignment="CENTER">
+        <Text id="safeText" fill="black" text="SAFE" />
+        <ImageView fitHeight="122.0" fitWidth="190">
+            <image>
+                <Image url="@logo.png" />
+            </image>
+        </ImageView>
+        <Text id="petText" text="PET">
+            <fill>
+                <LinearGradient endX="1.0" endY="0.0">
+                    <stops>
+                        <Stop color="#af7ac5" offset="0.3" />
+                        <Stop color="black" offset="0.5" />
+
+                    </stops>
+                </LinearGradient>
+            </fill>
+        </Text>
+    </HBox>
+
+    <TableView fx:id="tableView" prefHeight="218.0" prefWidth="606.0">
+        <columns>
+            <TableColumn fx:id="idColumn" text="id " />
+
+            <TableColumn fx:id="nameColumn" text="Nom Produit" />
+            <TableColumn fx:id="quantityColumn" text="Quantité" />
+            <TableColumn fx:id="priceColumn" text="Prix" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="272.0" text="Description Produit" />
+        </columns>
+    </TableView>
+
+    <HBox alignment="CENTER" prefHeight="39.0" prefWidth="593.0" spacing="25" style="-fx-padding: 10;">
+        <Button onAction="#onAddRowButtonClick" style="-fx-background-color: #C39BD3;" styleClass="button1" text="Add Row" textFill="#eeeeee" />
+        <Button onAction="#onDeleteRowButtonClick" style="-fx-background-color: #C39BD3;" styleClass="button2" text="Delete Row" textFill="#eeeeee" />
+        <Button onAction="#onModifyRowButtonClick" style="-fx-background-color: #C39BD3;" styleClass="button3" text="Modify Row" textFill="#eeeeee" />
+    </HBox>
+
+</VBox>

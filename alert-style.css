@@ -1,0 +1,12 @@
+
+/* Style for the buttons */
+.my-dialog-pane .button-bar .button {
+    -fx-background-color: #C39BD3; /* Set button background color */
+    -fx-text-fill: #ffffff; /* Set button text color */
+}
+
+/* Style for the default button */
+.my-dialog-pane .button-bar .default-button {
+    -fx-background-color: #C39BD3; /* Set default button background color */
+    -fx-text-fill: #ffffff; /* Set default button text color */
+}

@@ -1,0 +1,64 @@
+/* Style pour le titre et sous-titre */
+.title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+.subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #666666;
+}
+
+/* Style pour la barre de recherche */
+.search-bar {
+    -fx-pref-width: 200px;
+    -fx-pref-height: 30px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+}
+
+.search-button {
+    -fx-pref-height: 30px;
+    -fx-background-color:  #C39BD3;
+    -fx-text-fill: white;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+/* Style pour les boutons principaux */
+.main-button {
+    -fx-pref-width: 150px;
+    -fx-pref-height: 150px;
+    -fx-background-color: #f0f0f0;
+    -fx-border-color:  #C39BD3;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.main-button:hover {
+    -fx-background-color: #ffffff;
+}
+
+/* Style pour les labels des boutons */
+.main-button .label {
+    -fx-font-size: 12px;
+}
+
+/* Style pour les onglets */
+.tab-pane {
+    -fx-background-color: #ffffff;
+}
+
+.list-view .list-cell {
+    -fx-padding: 10;
+    -fx-font-size: 16px;
+    -fx-border-color: transparent;
+}
+
+.list-view .list-cell:selected {
+    -fx-background-color: #add8e6;
+    -fx-text-fill: #ffffff;
+}

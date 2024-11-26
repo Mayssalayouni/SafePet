@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.image.Image?>
+<VBox prefHeight="447.0" prefWidth="454.0" spacing="10" stylesheets="@detailsfiche.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.example.demo1.FicheDetailsController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+        <HBox>
+            <Button onAction="#handleReturnToHome">
+                <graphic>
+                    <ImageView fitHeight="22.0" fitWidth="29.0">
+                        <image>
+                            <Image url="@home.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </HBox>
+
+
+    <Label id="titleLabel" text="Détails de la fiche médicale" />
+
+    <Label text="Nom du patient:" />
+    <Label id="nomLabel" fx:id="nomPLabel" />
+
+
+    <Label text="Prénom du patient:" />
+    <Label id="prenomLabel" fx:id="prenomPLabel" />
+    <Label text="Nom d'animal':" />
+    <Label id="nomALabel" fx:id="nomALabel" />
+    <Label text="Raison maladie':" />
+
+    <Label id="raisonLabel" fx:id="raisonLabel" />
+
+    <Label text="Prescription':" />
+    <Label id="prescriptionLabel" fx:id="prescriptionPLabel" prefHeight="89.0" prefWidth="388.0" />
+   <ButtonBar prefHeight="43.0" prefWidth="382.0">
+      <buttons>
+         <Button mnemonicParsing="false" text="Modifier" />
+         <Button id="modifierButton" prefHeight="35.0" prefWidth="98.0" text="Supprimer" />
+         <Button id="supprimerButton" prefHeight="35.0" prefWidth="87.0" text="Imprimer" />
+      </buttons>
+   </ButtonBar>
+</VBox>

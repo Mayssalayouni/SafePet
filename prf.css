@@ -1,0 +1,21 @@
+.profile-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #333333;
+}
+
+
+
+.separator {
+    -fx-background-color:#bc60e0; /* Set separator color */
+    -fx-border-width: 1px; /* Set border width */
+}
+
+.button {
+    -fx-background-color: #C39BD3; /* Set button background color */
+    -fx-text-fill: white; /* Set button text color */
+    -fx-font-size: 14px; /* Set button font size */
+}
+
+.button:hover {
+    -fx-background-color: #bc60e0; /* Change button background color on hover */
+}

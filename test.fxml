@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.demo1.ProfileController"
+      alignment="CENTER"
+      prefHeight="600.0"
+      prefWidth="800.0"
+      styleClass="profile-page"
+stylesheets="profile.css">
+    <padding>
+        <Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/>
+    </padding>
+
+    <HBox spacing="20">
+        <!-- First Card: Personal Information -->
+        <VBox styleClass="card">
+            <ImageView>
+                <Image url="@avatar.jpg" />
+            </ImageView>
+            <VBox styleClass="card-info">
+                <Label fx:id="nameLabel" />
+                <Label fx:id="emailLabel" />
+                <Label fx:id="phoneNumberLabel" />
+            </VBox>
+            <Button text="Modifier" styleClass="button" />
+        </VBox>
+
+        <!-- Second Card: Cabinet Information -->
+        <VBox styleClass="card">
+            <VBox styleClass="card-info">
+                <Label fx:id="cabinetNameLabel" />
+                <Label fx:id="rueLabel" />
+                <Label fx:id="governorateLabel" />
+                <Label fx:id="numeroLicenceLabel" />
+            </VBox>
+        </VBox>
+    </HBox>
+</VBox>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.UserController"
+      spacing="10" alignment="CENTER" style="-fx-background-color: #f0f0f0;" prefWidth="400">
+    <stylesheets>
+        <URL value="@styles.css" />
+    </stylesheets>
+
+    <Label text="Appointment Form" style="-fx-font-size: 18px;"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Patient Name:"/>
+        <TextField fx:id="patientNameTextField"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Contact Info:"/>
+        <TextField fx:id="contactInfoTextField"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Pet Name:"/>
+        <TextField fx:id="petNameTextField"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Pet Species:"/>
+        <TextField fx:id="petSpeciesTextField"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Appointment Date:"/>
+        <DatePicker fx:id="appointmentDatePicker"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="fixer RDV"  styleClass="custom-button" />
+        <Button text="Back" onAction="#handleBackButtonAction" styleClass="custom-button" />
+    </HBox>
+</VBox>

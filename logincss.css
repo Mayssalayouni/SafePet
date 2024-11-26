@@ -1,0 +1,34 @@
+/* styles.css */
+.root {
+    -fx-background-color: #f0f0f0f;
+}
+
+.title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+.subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: black;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+    -fx-padding: 0 20 0 20;
+}
+
+.button {
+    -fx-background-color: #C39BD3; /* Light pink background color */
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.link {
+    -fx-font-size: 10px;
+    -fx-text-fill: #0000EE; /* Link color */
+    -fx-underline: true;
+}

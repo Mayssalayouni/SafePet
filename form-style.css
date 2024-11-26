@@ -1,0 +1,41 @@
+/* Labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333; /* Dark gray text */
+}
+
+/* Text fields */
+.text-field {
+    -fx-pref-width: 200px; /* Set preferred width */
+    -fx-pref-height: 30px; /* Set preferred height */
+    -fx-font-size: 14px;
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #cccccc; /* Light gray border */
+    -fx-border-radius: 5px; /* Rounded corners */
+}
+
+/* Buttons */
+.button {
+    -fx-pref-width: 100px; /* Set preferred width */
+    -fx-pref-height: 30px; /* Set preferred height */
+    -fx-font-size: 15px;
+    -fx-background-color: #C39BD3;
+    -fx-border-radius: 8px; /* Rounded corners */
+    -fx-cursor: hand; /* Change cursor to hand on hover */
+    -fx-text-fill: white;
+}
+
+/* Add Button */
+.add-button {
+    -fx-background-color: #C39BD3;
+}
+
+/* Cancel Button */
+.cancel-button {
+    -fx-background-color: #C39BD3;
+}
+
+/* Button hover effect */
+.button:hover {
+    -fx-background-color: #AF7AC5;
+}

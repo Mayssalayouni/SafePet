@@ -1,0 +1,48 @@
+/* Style pour le TableView */
+.table-view {
+    -fx-background-color: #f4f4f4;
+    -fx-padding: 6px;
+}
+
+/* Style pour les colonnes */
+.table-column {
+    -fx-alignment: CENTER;
+}
+
+/* Style pour les cellules */
+.table-cell {
+    -fx-alignment: CENTER-LEFT;
+    -fx-font-size: 14px;
+    -fx-padding: 3px;
+}
+
+/* Style pour les en-têtes de colonnes */
+.table-header {
+    -fx-font-weight: bold;
+}
+
+/* Style pour les lignes */
+.table-row-cell {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dddddd; /* Couleur de la bordure entre les lignes */
+    -fx-border-width: 0 0 1 0; /* Ajoute une bordure en bas de chaque ligne */
+}
+
+/* Style pour les lignes sélectionnées */
+.table-row-cell:selected {
+    -fx-background-color: #bde4ff;
+}
+
+/* Style pour les boutons dans les cellules */
+.table-button {
+    -fx-background-color: #4caf50; /* Couleur de fond */
+    -fx-text-fill: #ffffff; /* Couleur du texte */
+    -fx-padding: 5px 10px; /* Espacement */
+    -fx-border-radius: 5px; /* Bord arrondi */
+    -fx-font-size: 12px; /* Taille de la police */
+}
+
+/* Style pour les boutons au survol */
+.table-button:hover {
+    -fx-background-color: #388e3c; /* Couleur de fond au survol */
+}

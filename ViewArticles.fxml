@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.ArticlesController" prefHeight="600" prefWidth="1000">
+    <top>
+        <!-- Header section -->
+        <HBox style="-fx-background-color: #C39BD3; -fx-padding: 10px;">
+            <Text style="-fx-fill: white; -fx-font-size: 24px;">Article Page</Text>
+            <Region HBox.hgrow="ALWAYS"/>
+            <!-- Back button -->
+            <Button text="Back" onAction="#handleBackButtonAction" style="-fx-background-color:#C39BD3; -fx-text-fill: white; -fx-padding: 5px;  -fx-font-size: 17px;"/>
+        </HBox>
+    </top>
+    <center>
+        <!-- ScrollPane containing the FlowPane -->
+        <ScrollPane fitToWidth="true">
+            <content>
+                <FlowPane fx:id="articlesFlowPane" alignment="TOP_LEFT" hgap="20" vgap="20" style="-fx-padding: 20px;" />
+            </content>
+        </ScrollPane>
+    </center>
+</BorderPane>

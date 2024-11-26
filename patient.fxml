@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="342.0" prefWidth="398.0" spacing="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.example.demo1.AddPatientController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+
+        <HBox>
+            <Button onAction="#retourAccueil">
+                <graphic>
+                    <ImageView fitHeight="22.0" fitWidth="29.0">
+                        <image>
+                            <Image url="@home.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+        </HBox>
+
+    <Label style="-fx-font-weight: bold;" text="Ajouter patient" />
+    <TextField fx:id="nomField" promptText="Nom" />
+    <TextField fx:id="prenomField" promptText="Prénom" />
+    <TextField fx:id="cinField" promptText="CIN" />
+    <TextField fx:id="typeAnimalField" promptText="Type d'animal" />
+    <TextField fx:id="nomAnimalField" promptText="Nom de l'animal" />
+    <TextField fx:id="idAnimalField" promptText="ID de l'animal" />
+
+    <HBox spacing="10">
+        <Button onAction="#ajouterPatient" style="-fx-background-color: #C39BD3;" text="Ajouter" textFill="WHITE" />
+        <Button onAction="#reinitialiserChamps" style="-fx-background-color: #C39BD3;" text="Réinitialiser" textFill="WHITE" />
+    </HBox>
+</VBox>

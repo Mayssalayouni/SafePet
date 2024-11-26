@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.demo1.VetListController">
+    <VBox maxHeight="700" maxWidth="800"  minHeight="400" minWidth="600" layoutX="14.0" layoutY="14.0" spacing="10.0">
+           <Label text="Filtrer par localisation"/> <!-- New Label -->
+        <HBox spacing="440.0" > <ComboBox fx:id="governorateComboBox" promptText="Select Governorate" onAction="#handleSearch"/>
+        <Button text="Accueil " style="  -fx-background-color: #C39BD3; -fx-text-fill: white;" onAction="#handleBackHome" />
+      </HBox>
+
+        <ListView fx:id="vetListView" prefHeight="400.0" prefWidth="300.0" onMouseClicked="#handleUserClicked"/>
+
+    </VBox>
+</AnchorPane>

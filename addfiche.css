@@ -1,0 +1,77 @@
+/* Appliquer des marges internes (padding) pour le VBox principal */
+.vbox {
+    -fx-padding: 20;
+    -fx-spacing: 15;
+    -fx-alignment: center;
+}
+
+/* Style pour les étiquettes (labels) */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+/* Style pour les champs de texte (TextField et TextArea) */
+.text-field, .text-area {
+    -fx-padding: 5;
+    -fx-border-color: #CCCCCC;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: #F9F9F9;
+    -fx-font-size: 14px;
+}
+
+.text-area {
+    -fx-pref-row-count: 4;
+}
+
+/* Style pour le DatePicker */
+.date-picker {
+    -fx-padding: 10;
+    -fx-border-color: #C39BD3;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: #F9F9F9;
+    -fx-font-size: 14px;
+}
+
+/* Style pour les boutons */
+.button {
+    -fx-padding: 10 20;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-background-color: #C39BD3;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #45A049;
+}
+
+.button:pressed {
+    -fx-background-color: #3E8E41;
+}
+
+/* Style spécifique pour le bouton de retour */
+.button-back {
+    -fx-background-color: #f44336;
+}
+
+.button-back:hover {
+    -fx-background-color: #e53935;
+}
+
+.button-back:pressed {
+    -fx-background-color: #d32f2f;
+}
+
+/* Style pour les conteneurs HBox */
+.hbox {
+    -fx-spacing: 10;
+    -fx-alignment: center;
+}

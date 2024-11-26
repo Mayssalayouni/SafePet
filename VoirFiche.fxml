@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.VoirFicheController">
+
+    <center>
+
+        <TableView fx:id="ficheTableView">
+            <columns>
+                <TableColumn fx:id="nomPColumn" text="Nom du patient" />
+                <TableColumn fx:id="prenomPColumn" text="Prénom du patient" />
+                <TableColumn fx:id="cinPColumn" text="CIN du patient" />
+                <TableColumn fx:id="typeAnimalColumn" text="Type d'animal" />
+                <TableColumn fx:id="nomAColumn" text="Nom de l'animal" />
+                <TableColumn fx:id="idAColumn" text="ID de l'animal" />
+                <TableColumn fx:id="raisonColumn" text="Raison" />
+                <TableColumn fx:id="dateColumn" text="Date" />
+                <TableColumn fx:id="prescriptionColumn" text="Prescription" />
+            </columns>
+        </TableView>
+    </center>
+   <top>
+       <Pane prefHeight="57.0" prefWidth="722.0" BorderPane.alignment="CENTER" >
+           <HBox>
+               <Button onAction="#handleReturnToHome">
+                   <graphic>
+                       <ImageView fitHeight="22.0" fitWidth="29.0">
+                           <image>
+                               <Image url="@home.png" />
+                           </image>
+                       </ImageView>
+                   </graphic>
+               </Button>
+           </HBox>
+       </Pane>
+   </top>
+</BorderPane>

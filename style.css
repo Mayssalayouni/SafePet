@@ -1,0 +1,19 @@
+
+.table-view .column-header {
+    -fx-background-color: #C39BD3;
+    -fx-border-color: #C39BD3; /* Light gray */
+    -fx-border-width: 0 0 0 0; /* Bottom border only */
+    -fx-border-style: solid;
+    -fx-font-weight:bold; /* Make the text bold */
+    -fx-alignment: CENTER;
+}
+#safeText, #petText {
+      -fx-font-family: Calibri, sans-serif; /* Use Calibri font family */
+       -fx-font-style: italic; /* Set font style to italic */
+    -fx-font-size: 25;
+    -fx-font-weight: bold;
+}
+
+
+
+

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.demo1.HomeController"
+            prefHeight="400.0" prefWidth="600.0" stylesheets="@doctor.css">
+    <children>
+
+    <GridPane  hgap="10" vgap="10" alignment="CENTER">
+        <Button styleClass="main-button" GridPane.rowIndex="0" GridPane.columnIndex="0" onAction="#showAddPatientForm">
+            <graphic>
+                <StackPane alignment="CENTER">
+                    <Label text="Ajouter patient" style="-fx-font-size: 12px;"/>
+                    <ImageView fitWidth="100" fitHeight="100">
+                        <image>
+                            <Image url="@add.png"/>
+                        </image>
+                    </ImageView>
+                </StackPane>
+            </graphic>
+        </Button>
+        <Button styleClass="main-button" GridPane.rowIndex="0" GridPane.columnIndex="1" onAction="#showPatientList">
+            <graphic>
+                <StackPane alignment="CENTER">
+                    <Label text="Patients" style="-fx-font-size: 12px;"/>
+                    <ImageView fitWidth="100" fitHeight="100">
+                        <image>
+                            <Image url="@pied.png"/>
+                        </image>
+                    </ImageView>
+                </StackPane>
+            </graphic>
+        </Button>
+        <Button styleClass="main-button" GridPane.rowIndex="1" GridPane.columnIndex="0" onAction="#showAddFiche">
+            <graphic>
+                <StackPane alignment="CENTER">
+                    <Label text="Fiches" style="-fx-font-size: 12px;"/>
+                    <ImageView fitWidth="100" fitHeight="100">
+                        <image>
+                            <Image url="@rapport.png"/>
+                        </image>
+                    </ImageView>
+                </StackPane>
+            </graphic>
+        </Button>
+        <Button styleClass="main-button" GridPane.rowIndex="1" GridPane.columnIndex="1" onAction="#showFiche">
+            <graphic>
+                <StackPane alignment="CENTER">
+                    <Label text=" voir Fiches" style="-fx-font-size: 12px;"/>
+                    <ImageView fitWidth="100" fitHeight="100">
+                        <image>
+                            <Image url="@rapport.png"/>
+                        </image>
+                    </ImageView>
+                </StackPane>
+            </graphic>
+        </Button>
+        <Button styleClass="main-button" GridPane.rowIndex="0" GridPane.columnIndex="2" onAction="#showCalendar">
+            <graphic>
+                <StackPane alignment="CENTER">
+                    <Label text=" Calendrie" style="-fx-font-size: 12px;"/>
+                    <ImageView fitWidth="100" fitHeight="100">
+                        <image>
+                            <Image url="@cal.png"/>
+                        </image>
+                    </ImageView>
+                </StackPane>
+            </graphic>
+        </Button>
+
+        <!-- Ajoutez d'autres boutons ici -->
+    </GridPane>
+
+    </children>
+</BorderPane>

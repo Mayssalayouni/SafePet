@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="rootPane" prefHeight="400" prefWidth="700" stylesheets="@user.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.UserController">
+
+
+    <HBox alignment="CENTER_LEFT" spacing="10" style="-fx-background-color: #ffff;">
+        <ImageView fitHeight="91.0" fitWidth="119.0">
+            <image>
+                <Image url="@logo.png" />
+            </image>
+        </ImageView>
+        <VBox prefHeight="100.0" prefWidth="238.0" spacing="5" style="-fx-padding: 10 0 0 0;">
+            <Label styleClass="title" text="SafePet" />
+            <Label styleClass="subtitle" text="Santé animale, gestion simplifiée" />
+        </VBox>
+        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="422.0" spacing="10" style="-fx-padding: 10;">
+            <TextField prefWidth="123.0" promptText="Rechercher ici..." styleClass="search-bar" />
+            <Button styleClass="search-button" text="Rechercher" />
+        </HBox>
+    </HBox>
+    <HBox>
+        <VBox alignment="TOP_LEFT" prefHeight="800" prefWidth="200" spacing="40" style="-fx-border-color: #C39BD3;" styleClass="menu-box">
+            <VBox spacing="20" style="-fx-padding: 10;">
+                <Hyperlink maxWidth="Infinity" onAction="#handleAccueil" text="Accueil" VBox.vgrow="ALWAYS" />
+                <Hyperlink maxWidth="Infinity" onMouseClicked="#handleProfile" text="Profile" VBox.vgrow="ALWAYS" />
+                <Hyperlink maxWidth="Infinity" onMouseClicked="#handleViewArticles" text="Articles" VBox.vgrow="ALWAYS" />
+                <Hyperlink maxWidth="Infinity" onMouseClicked="#handleSearchVet" text="Veterinaires" VBox.vgrow="ALWAYS" />
+            </VBox>
+         <ButtonBar prefHeight="40.0" prefWidth="200.0" />
+       <Button onAction="#handleLogoutAction" fx:id="logoutButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="245.0" style="-fx-background-color: #C39BD3;" text="Deconnexion" textFill="#fffdfd" />
+        </VBox>
+
+        <StackPane fx:id="contentPane">
+            <!-- Contenu par défaut ici, par exemple la page d'accueil -->
+            <GridPane alignment="CENTER" hgap="10" style="-fx-padding: 5;" vgap="10">
+                <Button onAction="#handleProfile" styleClass="main-button" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                    <graphic>
+                        <StackPane alignment="CENTER">
+                            <Label style="-fx-font-size: 12px;" />
+                            <ImageView fitHeight="100" fitWidth="100">
+                                <image>
+                                    <Image url="@p.png" />
+                                </image>
+                            </ImageView>
+                        </StackPane>
+                    </graphic>
+                </Button>
+                <Button onAction="#handleViewArticles" styleClass="main-button" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                    <graphic>
+                        <StackPane alignment="CENTER">
+                            <Label style="-fx-font-size: 12px;" />
+                            <ImageView fitHeight="100" fitWidth="100">
+                                <image>
+                                    <Image url="@ar.png" />
+                                </image>
+                            </ImageView>
+                        </StackPane>
+                    </graphic>
+                </Button>
+
+
+
+                <Button onAction="#handleSearchVet" styleClass="main-button" GridPane.columnIndex="2" GridPane.rowIndex="0">
+                    <graphic>
+                        <StackPane alignment="CENTER">
+                            <Label style="-fx-font-size: 12px;" />
+                            <ImageView fitHeight="100" fitWidth="100">
+                                <image>
+                                    <Image url="@vet.png" />
+                                </image>
+                            </ImageView>
+                        </StackPane>
+                    </graphic>
+                </Button>
+                <columnConstraints>
+                    <ColumnConstraints />
+                    <ColumnConstraints />
+                    <ColumnConstraints />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints />
+                    <RowConstraints />
+                </rowConstraints>
+
+                <!-- Ajoutez d'autres boutons ici -->
+            </GridPane>
+
+            <!-- Profile page -->
+            <VBox fx:id="profilePage" alignment="CENTER" spacing="10" visible="false">
+                <Label style="-fx-font-size: 24px;" text="Profile Page" />
+                <!-- Add your profile page content here -->
+            </VBox>
+
+
+        </StackPane>
+    </HBox>
+</VBox>
